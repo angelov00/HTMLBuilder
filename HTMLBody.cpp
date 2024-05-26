@@ -7,6 +7,7 @@ void HTMLBody::addElement(const HTMLElement* element) {
 void HTMLBody::editElement(int index) {
 	if (index < 0 || index >= elements.size()) {
 		std::cout << "Invalid index!\n";
+		return;
 	}
 
 	this->elements.at(index)->edit();
@@ -15,7 +16,9 @@ void HTMLBody::editElement(int index) {
 void HTMLBody::removeElement(int index) {
 	if (index < 0 || index >= elements.size()) {
 		std::cout << "Invalid index!\n";
+		return;
 	}
+	
 	delete elements[index];
 	elements.erase(elements.begin() + index);
 }
