@@ -1,0 +1,12 @@
+#ifndef ELEMENT_TYPE_HPP
+#define ELEMENT_TYPE_HPP
+
+enum ElementType {
+	HEADING,
+	PARAGRAPH,
+	HYPERLINK,
+	IMAGE,
+	NEW_LINE,
+	HORIZONTAL_LINE
+};
+#endif // !ELEMENT_TYPE_HPP
